@@ -4,9 +4,10 @@ import"bootstrap/dist/css/bootstrap.css"
 import Back from "../components/backbutton"
 import HtmlParser from "react-html-parser"
 
-
-
-var aid = localStorage.getItem("info");
+var aid;
+if (typeof window !== 'undefined') {
+    aid = localStorage.getItem("info");
+}
 var pageData = JSON.parse(aid);
 
 export default ({data})=>{
