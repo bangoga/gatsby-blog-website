@@ -1,0 +1,14 @@
+.smallCard{
+    margin: 1rem 1rem;
+    align-content: center;
+    position: relative;
+    transition: transform .2s linear;
+}
+.smallCard:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.pbody{
+    font-size: 13px; 
+}

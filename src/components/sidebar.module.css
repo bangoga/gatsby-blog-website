@@ -1,0 +1,47 @@
+.container {
+    margin: 1rem 1rem;
+    align-content: center;
+    position: relative;
+    color:teal;
+  }
+
+  .vl{
+    border-right: 2px solid teal;
+    opacity: 0.2;
+    height: 70vh;
+    float:right;
+  }
+ 
+  .cardPic{
+      float:right;
+      max-width: 60%;
+      margin: 1rem 1rem;
+      align-content: center;
+      position: relative;
+      color:teal;
+      font-size:13px;
+      text-align:center;
+  }
+  .mainPic
+  {
+    margin: 0rem 0rem !important;
+    max-width: 60% !important;
+    position: relative;
+  }
+
+  img.roundedcircle {
+    object-fit: cover;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    object-position: 0% 0%;
+    margin:0rem 0rem;
+}
+
+#image1{
+    background-image: url(https://github.com/bangoga/bangoga.github.io/blob/master/avatar2.jpg?raw=true);
+}
+
+.badgeside{
+    font-size:13px;
+}

@@ -1,0 +1,19 @@
+.back{
+    max-width: 50px;
+    position:fixed;
+    left:10%;
+    top:90%;
+    cursor: pointer;
+    transition: transform .2s;
+    transition: filter .2s;
+}
+
+.back:hover{
+    filter:contrast(200%);
+    filter:brightness(60%);
+    transform: scale(1.1);
+}
+.hr1 {
+    border-bottom: 2px solid teal !important;
+    opacity: 0.2 !important;
+}

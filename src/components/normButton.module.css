@@ -1,0 +1,40 @@
+.btndefault {
+    font-family: Raleway-SemiBold;
+    font-size: 15px;
+    color: rgba(108, 88, 179, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(108, 89, 179, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .btndefault:hover {
+    color: #FFF;
+    background: rgba(108, 88, 179, 0.75);
+    border: 2px solid rgba(108, 89, 179, 0.75);
+    cursor: pointer; 
+  }
+  
+  .btnprimary {
+    font-family: Raleway-SemiBold;
+    font-size: 18px;
+    color: rgba(58, 133, 191, 0.75);
+    letter-spacing: 1px;
+    line-height: 22px;
+    border: 2px solid rgba(58, 133, 191, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+    margin: 0.5rem 0.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+  
+  .btnprimary:hover {
+    color: #FFF;
+    background: rgba(58, 133, 191, 0.75);
+    border: 2px solid rgba(58, 133, 191, 0.75);
+    cursor: pointer; 
+  }
