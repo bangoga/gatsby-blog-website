@@ -9,13 +9,7 @@ if (typeof window !== 'undefined') {
     aid = localStorage.getItem("info");
 }
 else{
-    aid={
-        "aid":1,
-        "title":"error",
-        "full":"error",
-        "imgs":[],
-        "subtitle":"error"
-    };
+    aid='{"aid":1,"title":"error","full":"error","imgs":[],"subtitle":"error"}';
 }
 
 var pageData = JSON.parse(aid);
