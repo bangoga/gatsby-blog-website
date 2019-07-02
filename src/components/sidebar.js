@@ -1,7 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import SB from "../components/sidebar.module.css"
-import { graphql } from "gatsby"
 
 
 const ClickableBadge = props => ( 
@@ -32,26 +31,5 @@ export default props =>
         </div>
         {console.log(props)}
     </div>
-    
-)
-
-
-export const query = graphql`
-query {
-    allFile(filter: {name: {eq: "data"}}) {
-      edges {
-        node {
-          id
-          childComponentsJson{
-            article {
-              id
-              full
-              teaser
-            }
-          }
-        }
-      }
-    }
-  } 
-`
-
+   
+);
