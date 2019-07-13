@@ -12,7 +12,8 @@
     float:right !important;
   }
  
-  .cardPic{
+  .cardPic
+  {
       float:right !important;
       max-width: 60% !important;
       margin: 1rem 1rem !important;
