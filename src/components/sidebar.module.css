@@ -1,41 +1,41 @@
 .container {
-    margin: 1rem 1rem;
-    align-content: center;
-    position: relative;
-    color:teal;
+    margin: 1rem 1rem !important;
+    align-content: center !important;
+    position: relative !important;
+    color:teal !important;
   }
 
   .vl{
-    border-right: 2px solid teal;
-    opacity: 0.2;
-    height: 70vh;
-    float:right;
+    border-right: 2px solid teal !important;
+    opacity: 0.2 !important;
+    height: 70vh !important;
+    float:right !important;
   }
  
   .cardPic{
-      float:right;
-      max-width: 60%;
-      margin: 1rem 1rem;
-      align-content: center;
-      position: relative;
-      color:teal;
-      font-size:13px;
-      text-align:center;
+      float:right !important;
+      max-width: 60% !important;
+      margin: 1rem 1rem !important;
+      align-content: center !important;
+      position: relative !important;
+      color:teal !important;
+      font-size:13px !important;
+      text-align:center !important;
   }
   .mainPic
   {
     margin: 0rem 0rem !important;
     max-width: 60% !important;
-    position: relative;
+    position: relative !important;
   }
 
   img.roundedcircle {
-    object-fit: cover;
-    border-radius: 100%;
-    height: 200px;
-    width: 200px;
-    object-position: 0% 0%;
-    margin:0rem 0rem;
+    object-fit: cover !important;
+    border-radius: 100% !important;
+    height: 200px !important;
+    width: 200px !important;
+    object-position: 0% 0% !important;
+    margin:0rem 0rem !important;
 }
 
 #image1{
@@ -43,5 +43,5 @@
 }
 
 .badgeside{
-    font-size:13px;
+    font-size:13px !important;
 }
