@@ -1,7 +1,8 @@
 import React from "react"
+import SideBar from "../components/sidebar"
 import Header from "../components/header"
 import Card from "../components/card"
-import SideBar from "../components/sidebar"
+
 
 export default ({data}) =>{
 var i ;

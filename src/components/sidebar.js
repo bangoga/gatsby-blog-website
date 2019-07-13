@@ -1,6 +1,6 @@
 import React from "react"
-import "bootstrap/dist/css/bootstrap.css"
 import SB from "../components/sidebar.module.css"
+import "bootstrap/dist/css/bootstrap.css"
 
 
 const ClickableBadge = props => ( 

@@ -1,6 +1,7 @@
 import React from "react"
-import Button from "./normButton"
 import HD from "../components/header.module.css"
+import Button from "./normButton"
+
 
 
 export default props  => (
