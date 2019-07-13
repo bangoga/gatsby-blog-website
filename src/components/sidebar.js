@@ -17,7 +17,7 @@ export default props =>
             <img className={SB.roundedcircle} alt ="avatar" src="https://github.com/bangoga/bangoga.github.io/blob/master/avatar3.jpg?raw=true"></img>
             <div class="card-body">
                 <h5 class="card-title"><code style={{color:`black`}}>Khalil Mohsin<br></br><footer class="blockquote-footer">Software Developer</footer></code></h5>
-                <p className={SB.cardtext} class="card-text">
+                <p class="card-text">
                 As a former management student in my first semester, I found a thrill and sense of accomplishment shifting to a computer science major in my former years. 
                 In the little time I've spent as a programmer, I believe I have come a long way. 
                 </p>
