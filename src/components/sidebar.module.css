@@ -46,6 +46,11 @@
     font-size:13px !important;
 }
 
-.pcard{
-  
+.cardtext {
+  margin: 1rem 1rem !important;
+  align-content: center !important;
+  position: relative !important;
+  color:teal !important;
+  text-align: center;
+  font-size: 13px;
 }
