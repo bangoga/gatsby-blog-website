@@ -11,7 +11,9 @@ function redict(name) {
         window.location="../";
     }
     else if(name==="Linkedin"){
-
+        window.location="https://www.linkedin.com/in/khalil-mohsin-887aba85/";
     }
-    
+    else if (name == "Projects"){
+        window.location="https://github.com/bangoga";
+    }  
 }
