@@ -10,7 +10,7 @@ function redict(name) {
     if(name==="Home"){
         window.location="../";
     }
-    else if(name==="Linkedin"){
+    else if(name==="LinkedIn"){
         window.location="https://www.linkedin.com/in/khalil-mohsin-887aba85/";
     }
     else if (name == "Projects"){
