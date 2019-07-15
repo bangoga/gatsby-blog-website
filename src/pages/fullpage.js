@@ -16,7 +16,9 @@ var pageData = JSON.parse(aid);
 
 export default ({data})=>{
  var  returnValue= (<div>
-        <Header/>      
+        <Header/>
+        <div class="col-md-8 offset-2">
+        <div class="row">
         <div class="col-md-6 offset-3" style={{ color: `black`}}>
             <h2 style={{lineHeight:1,color:`teal`,textAlign:`center`,fontWeight:900}}>{pageData.title}</h2>
             <p style={{fontSize:25,lineHeight:1.2,color:`teal`,textAlign:`center`,fontWeight:400}}>{pageData.subtitle}</p>
@@ -31,6 +33,8 @@ export default ({data})=>{
                 })
             }
         </div> 
+        </div> 
+        </div>
         <div class="col-sm-2"><Back/></div>
  </div> )
 return(returnValue)};
