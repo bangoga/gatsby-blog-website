@@ -8,13 +8,12 @@ youtube sensations advocating for getting help over apps like BetterHelp"
 
 
 "<image1></image1><p style='font-size:21px;line-height:1.58;letter-spacing:-.003em;font-weight:400'>
-This is going to be a long one, and maybe not even appreciated by a lot of people but here it goes.
+To all my readers, welcome to my new personal website, aka the platform I will be using to not only showcase my projects but also to voice my opinions and sometimes address conceptual information related to Computer Science from the easier to understand prospect. Gatsby and Netlfy have been of great help for me when it came to deploying an aesthetic website with semi-dynamic features. 
 <br></br>
-I’ve had quite some time to think about this topic. The idea of getting mental health help is being promoted crazy recently. 
-With most university pushing the envelope trying to get students to normalize getting mental health services to celebrities and 
-youtube sensations advocating for getting help over apps like BetterHelp. Now before i go on saying anything more, 
-i’d like to point out that I’m not against getting help, my concerns are not over the idea of mental health services but 
-the state of mental health services themselves.
+
+<h3>Why did I choose Gatsby?</h3><br><br>
+As someone experienced in working on large scale web apps using Node.js and React, The choice of using Gatsby was an easy one. As stated by Gatsby, it is a free and open source framework based on React, that uses Graphql as the bases of handling data, that allows it to act dynamic but within limitations. By doing so the website can have app-like functionalities deployed on platforms such as Netlify and GitHub, with little to no cost, and after all as a fresh college graduate, I need to make budget cuts wherever I can, or else I would be eating cup noodles all year long. In other words, Gatsby seemed to be the sweet spot between a static and a fully dynamic website, allowing me more functionality but saving me from the cost of deployment. 
+
 <br></br>
 For anyone who’s been through the system of getting counseling or care, 
 the imagery of sitting in front of another human being and being expected to spill out the narrative that has defined you is pretty vivid. 
