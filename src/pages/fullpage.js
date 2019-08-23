@@ -121,7 +121,7 @@ function filter_data(data){
         const article_id = parseInt(urlParams.get('user'))-1;
     
         var info = {
-            "title":"error",
+            "title":articles[article_id].title,
             "full":articles[article_id].full,
             "imgs":articles[article_id].img,
             "subtitle":articles[article_id].subtitle
