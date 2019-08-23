@@ -46,11 +46,12 @@ export default ({data})=>{
         </div>
         <div class="col-sm-2"><Back/></div>
  </div> )
-while(pageData.title=="error"){
+if(pageData.title=="error"){
     return(<div class="lds-circle"></div>)
 }
+else{
 return(returnValue)
-
+}
 };
 
 
@@ -120,7 +121,7 @@ function filter_data(data){
         const article_id = parseInt(urlParams.get('user'))-1;
     
         var info = {
-            "title":articles[article_id].title,
+            "title":"error",
             "full":articles[article_id].full,
             "imgs":articles[article_id].img,
             "subtitle":articles[article_id].subtitle
