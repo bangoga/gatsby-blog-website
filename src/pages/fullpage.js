@@ -4,6 +4,7 @@ import"bootstrap/dist/css/bootstrap.css"
 import Back from "../components/backbutton"
 import HtmlParser from "react-html-parser"
 import { graphql } from "gatsby"
+const url = require('url')
 
 var aid;
 if (typeof window !== 'undefined') {
@@ -107,7 +108,7 @@ query {
 
 function filter_data(data){
     var articles = data.allFile.edges[0].node.childComponentsJson.article; 
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(request.querystring);
     const article_id = parseInt(urlParams.get('user'))-1;
 
     var info = {
