@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/global.css"
+import global from "../styles/global.css"
 import Header from "../components/header"
 import"bootstrap/dist/css/bootstrap.css"
 import Back from "../components/backbutton"
@@ -47,7 +47,7 @@ export default ({data})=>{
         <div class="col-sm-2"><Back/></div>
  </div> )
 if(pageData.title=="error"){
-    return(<div class="lds-circle"></div>)
+    return(<div className={global.ldscircle}></div>)
 }
 else{
 return(returnValue)
