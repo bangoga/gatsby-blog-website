@@ -1,10 +1,12 @@
 import React from "react"
+import "../styles/global.css"
 import Header from "../components/header"
 import"bootstrap/dist/css/bootstrap.css"
 import Back from "../components/backbutton"
 import HtmlParser from "react-html-parser"
 import { graphql } from "gatsby"
 const url = require('url')
+
 
 var aid;
 if (typeof window !== 'undefined') {
@@ -44,7 +46,12 @@ export default ({data})=>{
         </div>
         <div class="col-sm-2"><Back/></div>
  </div> )
-return(returnValue)};
+while(pageData.title=="error"){
+    return(<div class="lds-circle"></div>)
+}
+return(returnValue)
+
+};
 
 
 
@@ -124,30 +131,6 @@ function filter_data(data){
       }
       else return {"aid":1,"title":"error","full":"error","imgs":[],"subtitle":"error"};
 }
-
-
-
-
-
-
-// wanna be able to use the current url and see what the url extension says.
-
-
-
-/**
- * graphql`
-        query qq{
-            data2Json(pid: {eq: "1"}) {
-                teaser
-                subtitle
-                title
-            }
-        }
-    `;
- */
-
-
-
 
 
 
