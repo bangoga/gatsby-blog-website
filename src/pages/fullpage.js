@@ -108,7 +108,7 @@ query {
 
 function filter_data(data){
     var articles = data.allFile.edges[0].node.childComponentsJson.article; 
-    const urlParams = new URLSearchParams(request.querystring);
+    const urlParams = new URLSearchParams(location.search);
     const article_id = parseInt(urlParams.get('user'))-1;
 
     var info = {
