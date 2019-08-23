@@ -1,6 +1,7 @@
 import React from "react"
 import Crd from "../components/card.module.css"
 import"bootstrap/dist/css/bootstrap.css"
+import { Url } from "url";
 
 export default props  => (
     <div onClick ={()=>redict(props.aid,props.title,props.full,props.imgs,props.subtitle)} className={Crd.smallCard}>
@@ -25,6 +26,12 @@ function redict(aid,title,full,imgs,subtitle) {
         "subtitle":subtitle
     };
     localStorage.setItem("info", JSON.stringify(info));
-    window.location="/fullpage";
+    
+    var newParam = 'user='+aid;
+    var param = new URLSearchParams(newParam);
+    console.log(param.get('user'));
+    
+    var fullURL = "/fullpage" + "?user="+param.get('user');
+    window.location=fullURL;
 }
 

@@ -3,6 +3,7 @@ import Header from "../components/header"
 import"bootstrap/dist/css/bootstrap.css"
 import Back from "../components/backbutton"
 import HtmlParser from "react-html-parser"
+import { graphql } from "gatsby"
 
 var aid;
 if (typeof window !== 'undefined') {
@@ -15,7 +16,12 @@ else{
 var pageData = JSON.parse(aid);
 
 export default ({data})=>{
- var  returnValue= (<div>
+    pageData=filter_data(data);
+    var initialPar = pageData.full;
+    var paragraph = imagePlace(initialPar,pageData.imgs);
+    var par = HtmlParser(paragraph);
+
+    var returnValue= (<div>
         <Header/>
         <div class="col-md-8 offset-2">
         <div class="row">
@@ -39,9 +45,7 @@ export default ({data})=>{
  </div> )
 return(returnValue)};
 
-var initialPar = pageData.full;
-var paragraph = imagePlace(initialPar,pageData.imgs);
-var par = HtmlParser(paragraph);
+
 
 //Takes overview data from main page, and organizes it. 
 
@@ -66,10 +70,55 @@ function imagePlace(par,imgs){
             
         var replacing = ""+x+imgSrc+y
         ans = ans.replace(replacing,returnValue);
-        console.log(ans);   
+       // console.log(ans);   
     }
 
     return ans;
+}
+
+// Building this as a exportable function that would classify what article number it is.
+// This is a work around over the fact that graphql in gatsby doesn't allow dynamically passing variables
+// So the choice was either to filter after calling all queries again, or write a complex yet less space complex code 
+
+// ------------------------------------------------------------- Query Workaround ---------------------------//
+export const query = graphql`
+query {
+  allFile(filter: {name: {eq: "data"}}) {
+    edges {
+      node {
+        id
+        childComponentsJson{
+          article {
+            id
+            full
+            teaser
+            title
+            img
+            subtitle
+          }
+        }
+      }
+    }
+  }
+} 
+` ;
+
+//-------------------------------------------------------- Handle - filter the data - ------------------------------// 
+
+function filter_data(data){
+    var articles = data.allFile.edges[0].node.childComponentsJson.article; 
+    const urlParams = new URLSearchParams(window.location.search);
+    const article_id = parseInt(urlParams.get('user'))-1;
+
+    var info = {
+        "title":articles[article_id].title,
+        "full":articles[article_id].full,
+        "imgs":articles[article_id].img,
+        "subtitle":articles[article_id].subtitle
+    };
+
+    console.log(info);
+    return info;
 }
 
 
@@ -77,14 +126,21 @@ function imagePlace(par,imgs){
 
 
 
+// wanna be able to use the current url and see what the url extension says.
 
 
 
-
-
-
-
-
+/**
+ * graphql`
+        query qq{
+            data2Json(pid: {eq: "1"}) {
+                teaser
+                subtitle
+                title
+            }
+        }
+    `;
+ */
 
 
 
