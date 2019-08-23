@@ -108,18 +108,21 @@ query {
 
 function filter_data(data){
     var articles = data.allFile.edges[0].node.childComponentsJson.article; 
-    const urlParams = new URLSearchParams(location.search);
-    const article_id = parseInt(urlParams.get('user'))-1;
-
-    var info = {
-        "title":articles[article_id].title,
-        "full":articles[article_id].full,
-        "imgs":articles[article_id].img,
-        "subtitle":articles[article_id].subtitle
-    };
-
-    console.log(info);
-    return info;
+    if (typeof window !== `undefined`) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const article_id = parseInt(urlParams.get('user'))-1;
+    
+        var info = {
+            "title":articles[article_id].title,
+            "full":articles[article_id].full,
+            "imgs":articles[article_id].img,
+            "subtitle":articles[article_id].subtitle
+        };
+    
+        console.log(info);
+        return info;
+      }
+      else return null
 }
 
 
