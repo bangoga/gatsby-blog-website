@@ -122,7 +122,7 @@ function filter_data(data){
         console.log(info);
         return info;
       }
-      else return null
+      else return {"aid":1,"title":"error","full":"error","imgs":[],"subtitle":"error"};
 }
 
 
